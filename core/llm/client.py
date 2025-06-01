@@ -3,7 +3,6 @@ from openai import OpenAI
 from telethon.tl.types import Message
 from core.llm.promts import SUMMARY_PROMT
 from core.config.logging import get_logger
-from typing import List, Dict, Any
 
 logger = get_logger()
 
