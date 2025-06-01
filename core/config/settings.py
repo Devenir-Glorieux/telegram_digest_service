@@ -8,16 +8,15 @@ class Settings(BaseSettings):
     TELEGRAM_SESSION_NAME: str = Field(alias="TELEGRAM_SESSION_NAME", default="anon")
     TELEGRAM_API_ID: str = Field(alias="TELEGRAM_API_ID")
     TELEGRAM_API_HASH: str = Field(alias="TELEGRAM_API_HASH")
-
-
-
-    # MODEL: str = Field(alias="MODEL")
-    # TEMPERATURE: float = Field(alias="TEMPERATURE")
-    # TOP_P: float = Field(alias="TOP_P")
-    # LLM_TIMEOUT: int = Field(alias="LLM_TIMEOUT")
-    # MAX_NUMBER_OF_CALLS: int = Field(alias="MAX_NUMBER_OF_CALLS")
+    NUMBER_OF_RECENT_MESSAGES: int = Field(alias="NUMBER_OF_RECENT_MESSAGES")
+    
+    LLM_API_KEY: str = Field(alias="LLM_API_KEY")
+    LLM_BASE_URL: str = Field(alias="LLM_BASE_URL")
+    LLM_MODEL_NAME: str = Field(alias="LLM_MODEL_NAME")
+    TEMPERATURE: float = Field(alias="TEMPERATURE")
+    LLM_TIMEOUT: int = Field(alias="LLM_TIMEOUT")
     LOG_LEVEL: str = Field(alias="LOG_LEVEL")
-
+    TARGET_CHANNEL: str = Field(alias="TARGET_CHANNEL")
 
 
 @lru_cache

@@ -4,8 +4,6 @@ from structlog.processors import TimeStamper, JSONRenderer
 from core.config.settings import settings
 
 
-
-
 def json_dumps(obj, **kwargs):
     return orjson.dumps(obj).decode("utf-8")
 
